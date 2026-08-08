@@ -6,8 +6,8 @@ portfolio analysis, retirement planning, tax-advantaged account strategy,
 insurance review, and estate planning.
 
 ## A note about the author:
-- I have worked in software for almost 30 years. I realized a few years ago that I had this assumption in my head that "everyone that is good at math much be good at finance"...  It turns out that is not the case, and that not everyone finds learning about finance really interesting... It turns out that a lot of people's eyes glaze over when you talk about ROTH contributions and retirement planning... so I wanted to provide some of my experience in this world to my peers, colleagues and friends so they can educate themselves, open up new avanues for improving their family and personal financial position, and really prepare themselves for having educated conversations with financial and legal professionals.
-- Kndly note, I am not a financial advisor, I am not an attorney, I am not a CPA, seriously, this skill is a tool drafted by a financial planning hobbiest to help you think through how best to approach your financial plan for life. If you don't like the output, delete it and hire a professional...
+- I have worked in software for almost 30 years. I have also been a bit of a financial planning hobbiest for the same amount of time. I realized a few years ago that I had this assumption in my head that "everyone that is good at math must be good at finance"...  It turns out that is not the case, and that not everyone finds learning about finance really interesting... It also turns out that a lot of people's eyes glaze over when you talk about ROTH contributions and retirement planning... so I wanted to provide some of my experience in this world to my peers, colleagues and friends so they can educate themselves, open up new avanues for improving their family and personal financial position, and really prepare themselves for having educated conversations with financial and legal professionals.
+- Kindly note, I am not a financial advisor, I am not an attorney, I am not a CPA, seriously, this skill is a tool drafted by a financial planning hobbiest to help you think through how best to approach your financial plan for life. If you don't like the output, delete it and hire a professional...
 
 A few things this skill does. It encodes:
 
@@ -47,6 +47,35 @@ Once installed, the skill triggers automatically on financial-planning
 questions — "am I on track for retirement," a full net-worth review, a
 backdoor Roth question, a whole life insurance pitch someone's evaluating —
 no slash command required.
+
+### Setting up your workspace (optional)
+
+The skill works with no setup at all — just ask it a question. But it works
+best when pointed at a working directory holding your actual documents,
+since it's built to read source data rather than estimate from memory. A
+structure to grow into:
+
+```
+your-finances/
+├── Client_Profile.md          # ages, income, dependents, mortgage, spending, compensation, etc
+├── Financial_Action_Plan.md   # standing action plan + changelog, updated each session
+├── Tax_Documents/
+│   └── 2026/
+├── Investments/
+│   └── investments_inventory.md   # institutions you expect statements from
+├── Social_Security_Estimates/
+│   └── ss_inventory.md            # who should have an SSA estimate on file
+├── Prospectuses/               # fund/ETF prospectuses, for allocation lookups
+└── Session_Context/            # optional, session-only scratch docs
+```
+
+None of this is required up front — you can start with just a `Client_Profile.md`,
+or nothing at all, and let it grow over time. If you point the skill at a
+directory missing pieces of this structure, it will offer to set them up
+rather than assume your data doesn't exist. The two inventory files let it
+cross-check that every account or institution you expect to see is actually
+represented, and flag anything missing instead of assuming an account was
+closed.
 
 ## What it doesn't do
 

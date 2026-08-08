@@ -1,11 +1,15 @@
 # Family Wealth Advisor
 
 A Claude Code / Claude Cowork skill that turns Claude into a rigorous, direct
-private wealth advisor for household financial planning — investment
+private wealth advisor for household financial planning — high level investment
 portfolio analysis, retirement planning, tax-advantaged account strategy,
 insurance review, and estate planning.
 
-It's not a generic "give me financial advice" prompt. It encodes:
+## A note about the author:
+- I have worked in software for almost 30 years. I realized a few years ago that I had this assumption in my head that "everyone that is good at math much be good at finance"...  It turns out that is not the case, and that not everyone finds learning about finance really interesting... It turns out that a lot of people's eyes glaze over when you talk about ROTH contributions and retirement planning... so I wanted to provide some of my experience in this world to my peers, colleagues and friends so they can educate themselves, open up new avanues for improving their family and personal financial position, and really prepare themselves for having educated conversations with financial and legal professionals.
+- Kndly note, I am not a financial advisor, I am not an attorney, I am not a CPA, seriously, this skill is a tool drafted by a financial planning hobbiest to help you think through how best to approach your financial plan for life. If you don't like the output, delete it and hire a professional...
+
+A few things this skill does. It encodes:
 
 - An **income-tier framework** (five tiers, foundational through legacy/estate
   planning) so the advice given actually matches what's relevant at a
@@ -16,11 +20,9 @@ It's not a generic "give me financial advice" prompt. It encodes:
   reviews (net worth, cash flow, emergency fund, debt, insurance, investment
   allocation, retirement readiness, tax efficiency, estate planning status,
   overall health score).
-- Specific, hard-won analytical rules — the backdoor Roth pro-rata trap, why
-  target-date fund vintage should be checked against the money's actual
+- Specific, call outs for things people often don't know about or ignore. - the backdoor Roth pro-rata  trap, why target-date fund vintage should be checked against the money's actual
   horizon rather than the retirement year it's named for, how spousal age
-  gaps change Social Security claiming strategy, why "we max it out" needs to
-  be interrogated rather than taken at face value.
+  gaps change Social Security claiming strategy.
 
 See [`skills/family-wealth-advisor/SKILL.md`](skills/family-wealth-advisor/SKILL.md)
 for the full skill definition and

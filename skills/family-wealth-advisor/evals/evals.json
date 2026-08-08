@@ -1,0 +1,104 @@
+{
+  "skill_name": "family-wealth-advisor",
+  "evals": [
+    {
+      "id": 1,
+      "name": "full-diagnostic-request",
+      "prompt": "Can you give me a full picture of where my wife and I stand financially? We're both 38, live in NYC. I'm self-employed (consulting, ~$340k net last year) and she's W2 at $145k. We have about $180k in a SEP-IRA, $95k in old 401(k)s from prior jobs, $60k in a Roth IRA from years ago, $40k cash, and $310k in a taxable brokerage. We have two kids (ages 4 and 7) with $15k each in NY 529s. No life insurance beyond what her employer provides (1x salary). Mortgage balance is $890k on a $1.4M house at 6.1%. We want to retire at 65. Where do we stand?",
+      "expected_output": "A structured Private Wealth Diagnostic covering all 10 framework sections (net worth, cash flow, emergency fund, debt, insurance audit, investment allocation, retirement readiness, tax efficiency, estate planning status, overall health score 1-100 with top 3 priorities). Should flag the SEP-IRA -> 401(k) rollover opportunity to clean the pro-rata path, the life insurance gap, and NY 529 deduction considerations.",
+      "files": [],
+      "assertions": [
+        {"name": "includes_all_ten_diagnostic_sections", "description": "Response includes all 10 named Private Wealth Diagnostic sections (Net Worth Snapshot, Cash Flow Analysis, Emergency Fund, Debt Analysis, Insurance Audit, Investment Allocation, Retirement Readiness, Tax Efficiency, Estate Planning Status, Overall Financial Health Score)."},
+        {"name": "includes_numeric_health_score", "description": "Response gives a numeric overall financial health score out of 100."},
+        {"name": "flags_sep_ira_rollover_or_pro_rata", "description": "Response connects the SEP-IRA and old 401(k) balances to a rollover strategy and/or the pro-rata rule relevant to future backdoor Roth conversions."},
+        {"name": "flags_life_insurance_gap", "description": "Response flags the household's life insurance coverage (1x salary via employer only) as inadequate given income and dependents."},
+        {"name": "states_inflation_assumption", "description": "Response explicitly states an assumed inflation rate used in any long-horizon calculation."},
+        {"name": "recommends_professional_review", "description": "Response recommends CPA, CFP, or estate attorney review before executing at least one specific action (e.g. rollover, insurance purchase, estate documents)."}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "backdoor-roth-pro-rata",
+      "prompt": "I make too much to contribute to a Roth directly. My accountant mentioned a 'backdoor Roth' but I still have about $85k sitting in a traditional IRA from a rollover years ago. Can I still do this cleanly or is there a catch?",
+      "expected_output": "Explicitly names and explains the pro-rata rule, explains why the existing $85k pre-tax IRA balance breaks a 'clean' backdoor Roth conversion, and proposes the SEP-IRA/401(k) rollover-style fix (rolling the traditional IRA balance into an employer 401(k) if available) before executing the conversion. Recommends CPA/CFP review before executing the rollover or conversion.",
+      "files": [],
+      "assertions": [
+        {"name": "names_pro_rata_rule", "description": "Response explicitly uses the term 'pro-rata' (or 'pro rata') when explaining the mechanics."},
+        {"name": "identifies_85k_ira_as_problem", "description": "Response explicitly connects the existing $85k traditional IRA balance to why a 'clean' backdoor Roth is not possible as-is."},
+        {"name": "proposes_rollover_fix", "description": "Response proposes rolling the traditional IRA balance into an employer 401(k) (or similar vehicle) to clear the pre-tax balance before converting."},
+        {"name": "recommends_cpa_review", "description": "Response recommends CPA or CFP review before executing the rollover/conversion."}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "whole-life-insurance-evaluation",
+      "prompt": "Someone tried to sell my husband a whole life insurance policy at a work thing and honestly I have no idea if it's a scam or actually smart for us. He's 42, makes $310k, we're in the 32% bracket, already maxing his 401k. Are we the kind of people this is even for?",
+      "expected_output": "Applies the age (35-50) / income ($300k+) / bracket (32%+) sweet-spot framework from the skill and evaluates whether this household plausibly fits it, rather than a blanket yes/no. Flags that the salesperson has a commission incentive and that whole life is not a substitute for term life or maxed tax-advantaged accounts. Mentions key mechanics (7-pay test, MEC status, PUA rider) at a level appropriate to the question. Recommends independent CPA/CFP review before purchase.",
+      "files": [],
+      "assertions": [
+        {"name": "applies_sweet_spot_framework", "description": "Response explicitly references the age/income/tax-bracket criteria (roughly 35-50, $300k+ income, 32%+ bracket) and assesses this household against them."},
+        {"name": "flags_commission_incentive", "description": "Response notes that the person selling the policy has a commission-driven incentive, as a reason for skepticism."},
+        {"name": "mentions_key_mechanics", "description": "Response mentions at least one of: 7-pay test, MEC (modified endowment contract) status, or PUA (paid-up additions) rider."},
+        {"name": "notes_not_substitute_for_term", "description": "Response states whole life is not a substitute for term life insurance or for maxing standard tax-advantaged accounts."},
+        {"name": "recommends_independent_review", "description": "Response recommends independent CPA/CFP review before purchasing the policy."}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "career-transition-scenario",
+      "prompt": "I'm 40 and considering leaving my $220k corporate job to start my own consulting practice. Realistically I'd make less for the first 2-3 years -- maybe $130k -- before ramping back up to $250k+. We have a 6-year-old with $40k already in a 529 and I want to keep contributing $6k/year to it. How would this affect our retirement timeline (we're targeting 65) and should I scale back the 529 contributions during the lean years?",
+      "expected_output": "Quantifies impact on both retirement savings trajectory and 529 funding together (not siloed), states explicit assumptions (return rate, inflation rate, contribution levels) and distinguishes current-dollar vs future-dollar figures. Gives a direct, prioritized recommendation on whether/how much to scale back 529 contributions during the lean years, and notes the new SEP-IRA/Solo 401(k) options that open up with self-employment income.",
+      "files": [],
+      "assertions": [
+        {"name": "quantifies_retirement_impact", "description": "Response gives a projected quantitative impact (dollar figure, gap, or timeline shift) on the retirement trajectory, not just a qualitative statement."},
+        {"name": "quantifies_529_impact", "description": "Response gives a projected quantitative impact on the 529 balance or funding goal specifically, addressed together with retirement rather than ignored."},
+        {"name": "states_return_and_inflation_assumptions", "description": "Response explicitly states the assumed investment return rate and inflation rate used in its calculations."},
+        {"name": "distinguishes_nominal_vs_real_dollars", "description": "Response indicates whether its projected figures are in today's dollars or future/nominal dollars."},
+        {"name": "gives_direct_529_recommendation", "description": "Response gives a direct, specific recommendation on whether/how much to scale back 529 contributions during the lean years, rather than just listing options."},
+        {"name": "mentions_self_employment_retirement_vehicles", "description": "Response mentions SEP-IRA or Solo 401(k) as a new retirement savings vehicle enabled by self-employment income."}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "commodity-investment-question",
+      "prompt": "I keep hearing copper is going to be huge because of EVs and data centers. I have about $50k in a taxable brokerage account I want to put toward this thesis. Should I just buy a copper ETF, or look at mining stocks like Freeport? Does it matter whether I hold this in my taxable account vs. my 401k?",
+      "expected_output": "Distinguishes direct commodity exposure (e.g. CPER) from mining equity (e.g. COPX, FCX, SCCO) and diversified miners (e.g. BHP, RIO), explaining the different risk/return and tax character of each. Addresses tax location (taxable vs. tax-deferred vs. Roth) explicitly rather than ignoring the second question.",
+      "files": [],
+      "assertions": [
+        {"name": "distinguishes_direct_commodity_exposure", "description": "Response names or describes a direct commodity vehicle (e.g. CPER) as one distinct option."},
+        {"name": "distinguishes_mining_equity", "description": "Response names or describes single-company mining equity (e.g. FCX, SCCO) as a distinct option from direct commodity exposure."},
+        {"name": "distinguishes_diversified_miners", "description": "Response names or describes diversified/major miners (e.g. BHP, RIO) or a diversified mining ETF (e.g. COPX) as a distinct third option."},
+        {"name": "addresses_tax_location_question", "description": "Response explicitly answers whether it matters to hold this position in a taxable account vs. a 401(k), rather than ignoring that part of the question."},
+        {"name": "gives_direct_recommendation", "description": "Response gives a clear, specific recommendation rather than only listing pros/cons with no conclusion."}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "tier-1-foundational-starting-out",
+      "prompt": "I'm 26, single, and make $55k/year as a teacher. I have about $3k in savings, $2k in credit card debt at 24% APR, and my job offers a 401k with a 4% match but I haven't started contributing yet. I don't have any retirement accounts. What should I actually do first?",
+      "expected_output": "Prioritizes paying down the 24% APR credit card debt before or alongside starting to invest, then capturing the full employer 401(k) match, then building toward a full emergency fund, then a direct Roth IRA. Does not introduce backdoor Roth mechanics, whole life insurance, or advanced estate structures, since none are relevant at this income.",
+      "files": [],
+      "assertions": [
+        {"name": "prioritizes_high_interest_debt", "description": "Response treats the 24% APR credit card debt as a top priority, ahead of or alongside starting retirement contributions."},
+        {"name": "recommends_capturing_401k_match", "description": "Response recommends contributing at least enough to capture the full employer 401(k) match."},
+        {"name": "recommends_direct_roth_not_backdoor", "description": "Response recommends a direct Roth IRA and does not introduce backdoor Roth or pro-rata rule mechanics, which are irrelevant at this income level."},
+        {"name": "no_whole_life_recommendation", "description": "Response does not recommend or suggest whole life insurance is appropriate for this person."},
+        {"name": "no_advanced_estate_structures", "description": "Response does not recommend trusts, SLATs, or other advanced estate structures — at most a basic mention of a will/beneficiary designations."}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "tier-2-growing-household-order-of-operations",
+      "prompt": "My spouse and I are both 34, combined income is about $145k (I make $85k, she makes $60k), and we have two kids, ages 2 and 5. We have $15k combined in our 401(k)s so far, no IRA for either of us, $8k in emergency savings, and want to start saving for our children's college. Maxing out our 401(k)s isn't realistic yet — what should our order of operations be?",
+      "expected_output": "Recommends capturing the employer match, building the emergency fund toward 3-6 months, direct Roth IRA contributions for both spouses (not backdoor, since well under the phase-out), then 529 contributions with a check for any state tax deduction. Does not introduce backdoor Roth, mega-backdoor Roth, whole life insurance, or advanced estate structures.",
+      "files": [],
+      "assertions": [
+        {"name": "recommends_employer_match_and_direct_roth", "description": "Response recommends capturing the 401(k) match and treats direct Roth IRA contributions as available for both spouses, not backdoor."},
+        {"name": "no_backdoor_roth_mechanics", "description": "Response does not introduce backdoor Roth or pro-rata rule mechanics as necessary for this household."},
+        {"name": "no_whole_life_or_mega_backdoor", "description": "Response does not recommend whole life insurance or mega-backdoor Roth."},
+        {"name": "addresses_529_with_state_deduction_check", "description": "Response discusses 529 contributions for the kids and mentions checking for a state tax deduction."},
+        {"name": "no_advanced_estate_structures", "description": "Response does not recommend trusts or advanced estate structures beyond basic will/beneficiary-designation mentions."}
+      ]
+    }
+  ]
+}

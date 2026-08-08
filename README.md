@@ -33,7 +33,7 @@ links).
 **Claude Code:**
 
 ```
-/plugin marketplace add <your-org-or-username>/family-wealth-advisor
+/plugin marketplace add alirodell/family-wealth-advisor
 /plugin install family-wealth-advisor
 ```
 

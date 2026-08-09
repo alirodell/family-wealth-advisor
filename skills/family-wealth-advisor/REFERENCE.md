@@ -11,6 +11,7 @@ Cross-cutting reference material that applies regardless of income tier. See `re
 4. [Whole Life Insurance Mechanics: 7-Pay Test, MEC Status, and PUA Riders](#whole-life-insurance-mechanics-7-pay-test-mec-status-and-pua-riders)
 5. [Estate Tax Exemptions: Federal and State Landscape](#estate-tax-exemptions-federal-and-state-landscape)
 6. [529 Plans: Contribution Mechanics, State Availability, and Tax Parity](#529-plans-contribution-mechanics-state-availability-and-tax-parity)
+7. [Trump Accounts (IRC §530A): Custodial Accounts for Minors](#trump-accounts-irc-530a-custodial-accounts-for-minors)
 
 ---
 
@@ -31,6 +32,8 @@ The single consolidated source for the numbers referenced across SKILL.md and th
 | QBI/Section 199A SSTB phase-out (MFJ) | Begins ~$403,500, phase-out window ~$150,000 wide (fully phased out by ~$553,500) | Household | Relevant to self-employed SSTB business owners (consulting, law, medicine, financial services, etc.) — sources vary slightly on the exact figures post-OBBBA; confirm against the current-year IRS Revenue Procedure before relying on an exact number |
 | Saver's Credit AGI limits (single/MFS/QSS, HoH, MFJ) | $40,250 / $60,375 / $80,500 | Household | Relevant at Tier 1 — note that 2026 is the final year of the Saver's Credit in its current form; it's replaced by the "Saver's Match" starting tax year 2027, which works differently (a direct contribution to the saver's retirement account rather than a tax refund credit) — check whether this skill's Tier 1 guidance needs updating once that transition happens |
 | Standard deduction (single / MFJ) | $16,100 / $32,200 | Household (MFJ figure shown) | Determines whether itemizing is worthwhile — the gate on charitable bunching strategies |
+| Trump Account (IRC §530A) annual contribution limit | $5,000 per child, aggregate | **Per child** — combines individual, employer, and cafeteria-plan contributions from all sources into one shared cap | Not indexed for inflation until after 2027; see [Trump Accounts](#trump-accounts-irc-530a-custodial-accounts-for-minors) |
+| Trump Account federal seed contribution | $1,000 per eligible child, one-time | Per child — does **not** count against the $5,000 annual limit above | Only for U.S.-citizen children born 1/1/2025–12/31/2028; requires an affirmative election on Form 4547 |
 | Federal estate tax exemption | $15,000,000 per individual | **Per person** — portable to a surviving spouse with a timely filed election, giving $30,000,000 per couple | Made permanent and indexed going forward by the One Big Beautiful Bill Act (OBBBA), signed July 2025 — a large increase from the pre-OBBBA 2025 figure of $13.99M; see [Estate Tax Exemptions](#estate-tax-exemptions-federal-and-state-landscape) for why state exemptions matter far more than this federal number for most Tier 5 conversations |
 | Annual federal gift tax exclusion | $19,000 per recipient | **Per donor, per recipient** — a married couple can give $38,000 to the *same* recipient | Relevant to lifetime gifting strategies at Tier 5, and the governing constraint on annual 529 funding (see [529 Plans](#529-plans-contribution-mechanics-state-availability-and-tax-parity)) |
 | State income tax deduction for 529 contributions | Varies by state | **Almost always household** — a state's "MFJ" cap is already the joint figure and does *not* double | The most commonly misapplied figure in this table; see the 529 section |
@@ -262,3 +265,50 @@ When a client asks about a 529 plan, the actual sequence of questions is: (1) do
 - [529 Contribution Limits 2026: Maximums by State (Saving For College)](https://www.savingforcollege.com/article/maximum-529-plan-contribution-limits-by-state) — state aggregate balance caps
 - [States that do not conform with federal 529 plan tax laws (Saving For College)](https://www.savingforcollege.com/article/states-that-do-not-conform-with-federal-529-plan-tax-laws) — K-12 conformity
 - [No Income Tax States 2026 (World Population Review)](https://worldpopulationreview.com/state-rankings/no-income-tax-states)
+
+---
+
+## Trump Accounts (IRC §530A): Custodial Accounts for Minors
+
+### Origin and Core Mechanism
+"Trump Accounts" are a new tax-advantaged account for minors, created under **IRC §530A** by the Working Families Tax Cuts title of the One Big Beautiful Bill Act (OBBBA), enacted July 4, 2025. Structurally, a Trump Account functions as **a traditional IRA for a child** during a "growth period" that runs from birth until the year before the beneficiary turns 18 — contributions are non-deductible (after-tax) but grow tax-deferred, and the account is subject to a mandated, narrow investment menu rather than the beneficiary's choice.
+
+**This is new legislation with regulations still being finalized.** IRS Notice 2025-68 (December 2025) gave initial guidance; proposed regulations followed in the Federal Register in March 2026. Treat the mechanics below as current best understanding, not settled final rules — confirm against the latest IRS guidance before relying on specifics in a client conversation, per the skill's Tax Guidance Standard.
+
+### Eligibility and Establishment
+- An account may be opened for **any U.S.-citizen child under 18** with a valid Social Security Number, regardless of birth year.
+- The election to open an account must be filed **on or before December 31 of the year the child turns 17**, using **IRS Form 4547** (filed with a tax return, submitted separately, or made through the taxpayer's online IRS account).
+- **No contributions of any kind may be made before July 4, 2026**, even for accounts established earlier.
+
+### The $1,000 Federal Seed (Pilot Program) Contribution
+A one-time **$1,000 federal contribution** is available only for U.S.-citizen children **born January 1, 2025 through December 31, 2028** — this is the "pilot program" cohort, distinct from general eligibility above. It requires an affirmative election on Form 4547 and does **not** count against the $5,000 annual contribution limit. Because it is government money rather than the family's own after-tax contribution, it creates **no basis** — the full $1,000 (plus its growth) is taxable as ordinary income when eventually withdrawn, unlike a personal contribution.
+
+### Annual Contribution Limit ($5,000 Aggregate)
+All contributions to a given child's account — from parents, other family, friends, the beneficiary's own earnings, an employer, or a cafeteria plan — **share a single $5,000-per-year cap** (indexed for inflation starting 2027). There is no per-contributor limit within that; the constraint is per child, aggregated across every source. Two sources within that shared cap have distinct tax handling:
+- **Individual/family contributions** are non-deductible and establish **basis** — the beneficiary can later withdraw this portion tax-free.
+- **Employer contributions**, capped separately at **$2,500/year** (indexed) within the overall $5,000, are deductible to the employer and excluded from the employee's taxable income — but like the federal seed money, they create **no basis** for the beneficiary.
+
+This basis-tracking distinction is the same conceptual trap as the backdoor Roth's pro-rata rule (see above): a withdrawal is taxed based on the *ratio* of contributed-basis to total account value, not on which dollars the family thinks they're pulling out first.
+
+### Investment Requirements During the Growth Period
+Unlike a self-directed IRA, funds must be held in a **specific, mandated investment structure** for the entire growth period: an unleveraged mutual fund or ETF tracking a broad index of primarily U.S. companies (an S&P 500-style index is the explicit example in guidance), with **annual fees and expenses capped at 0.10%**. There is no menu choice beyond selecting among funds that meet this test — this is a meaningfully more restrictive structure than a 529 plan's typical age-based or static allocation options.
+
+### Access Restrictions and Conversion to a Traditional IRA at 18
+**No distributions are permitted during the growth period** except for a rollover, correction of an excess contribution, or the beneficiary's death — there is **no hardship exception**, which is a stricter rule than either a 529 or a standard IRA. Beginning January 1 of the year the beneficiary turns 18, the account converts to a standard **Traditional IRA**, at which point it can be moved to any custodian, invested at the beneficiary's discretion, and is governed by ordinary Traditional IRA distribution rules going forward (including the 10% early-withdrawal penalty before 59½, subject to the usual IRA exceptions).
+
+### Practical Guidance
+- **This is not a 529 substitute.** A 529 offers tax-free growth *and* tax-free qualified withdrawals for education; a Trump Account offers only tax-*deferred* growth, and withdrawals are taxed as ordinary income to the extent they exceed basis, regardless of purpose. For a household focused purely on education funding, the 529 remains the more tax-efficient vehicle — the Trump Account is better framed as a general, restricted-investment head start toward the child's adult financial life (comparable in spirit to a custodial Roth IRA, but funded by others rather than the child's own earned income).
+- **Don't assume the $1,000 seed applies broadly.** It's specific to the 2025–2028 birth-year pilot cohort — a family with an older child can still open an account and contribute up to $5,000/year, but will not receive the federal seed money.
+- **Flag the basis mechanics before a client contributes.** Because employer and federal-seed dollars carry no basis while personal contributions do, a family funding the account primarily through an employer benefit should understand more of the eventual withdrawal will be taxable than they may assume.
+- **Because this is pilot-stage legislation, revisit this section against current IRS guidance before advising on it** — final regulations, contribution mechanics, or the seed-money cohort could still change.
+
+### Sources
+- [26 U.S.C. §530A — Trump accounts (U.S. Code, House Office of the Law Revision Counsel)](https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title26-section530A&num=0&edition=prelim)
+- [IRS Notice 2025-68 — Notice of intent to issue regulations with respect to section 530A](https://www.irs.gov/pub/irs-drop/n-25-68.pdf)
+- [Treasury, IRS issue proposed regulations for Trump Accounts contribution pilot program (IRS Newsroom)](https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-for-trump-accounts-contribution-pilot-program-treasury-department-to-deposit-1000-into-the-account-of-each-eligible-child)
+- [Treasury, IRS issue proposed regulations on how to open initial Trump Accounts (IRS Newsroom)](https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-how-to-open-initial-trump-accounts-under-the-one-big-beautiful-bill)
+- [Federal Register: Trump Accounts (proposed rule, March 9, 2026)](https://www.federalregister.gov/documents/2026/03/09/2026-04533/trump-accounts)
+- [Form 4547 — Trump Account Election(s) (IRS)](https://www.irs.gov/pub/irs-pdf/f4547.pdf)
+- [Instructions for Form 4547 (IRS)](https://www.irs.gov/pub/irs-pdf/i4547.pdf)
+- [Trump Accounts: Overview and Policy Considerations (Congressional Research Service, via Congress.gov)](https://www.congress.gov/crs-product/R48910)
+- [4 million children have been signed up for Trump Accounts (IRS Newsroom)](https://www.irs.gov/newsroom/4-million-children-have-been-signed-up-for-trump-accounts-with-1-million-claiming-the-1000-pilot-program-contribution)

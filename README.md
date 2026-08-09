@@ -22,13 +22,14 @@ A few things this skill does. It encodes:
   overall health score).
 - Specific, call outs for things people often don't know about or ignore. - the backdoor Roth pro-rata  trap, why target-date fund vintage should be checked against the money's actual
   horizon rather than the retirement year it's named for, how spousal age
-  gaps change Social Security claiming strategy.
+  gaps change Social Security claiming strategy (if none of that made sense, don't worry, the drafted plan should explain it).
+- If you provide them, the plan can include a diagnostic on your estate documents, your will, any trusts, etc. I don't actually recommend doing this at first unless you want to go all in. Claude models are actually really quite good at proofreading these documents based on specific life contexts, age, income, family size, etc. When you combine the output of the financial aspects that this skill helps aggregate, the output is really quite interesting and helpful, but...  It can get really complex.
 
 See [`skills/family-wealth-advisor/SKILL.md`](skills/family-wealth-advisor/SKILL.md)
 for the full skill definition and
 [`skills/family-wealth-advisor/REFERENCE.md`](skills/family-wealth-advisor/REFERENCE.md)
-for cross-cutting reference material (backdoor Roth mechanics, IRS source
-links).
+for cross-cutting reference material (retirement fund mechanics, IRS source
+links, etc).
 
 ## Install
 
@@ -69,10 +70,9 @@ your-finances/
 └── Session_Context/            # optional, session-only scratch docs
 ```
 
-None of this is required up front — you can start with just a `Client_Profile.md`,
-or nothing at all, and let it grow over time. If you point the skill at a
+None of this is required up front — I recommend starting with a `Client_Profile.md` and a /Investments folder that contains your recent downloaded financial statements. You can absolutely also start with  nothing at all, and let it grow over time. If you point the skill at a
 directory missing pieces of this structure, it will offer to set them up
-rather than assume your data doesn't exist. The two inventory files let it
+rather than assume your data doesn't exist. The inventory files (`investments_inventory.md` and `ss_inventory.md`) let it
 cross-check that every account or institution you expect to see is actually
 represented, and flag anything missing instead of assuming an account was
 closed.

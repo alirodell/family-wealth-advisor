@@ -19,7 +19,7 @@ A few things this skill does. It encodes:
 - A **10-section Private Wealth Diagnostic** framework for full financial
   reviews (net worth, cash flow, emergency fund, debt, insurance, investment
   allocation, retirement readiness, tax efficiency, estate planning status,
-  overall health score).
+  overall health score). 
 - Specific, call outs for things people often don't know about or ignore. - the backdoor Roth pro-rata  trap, why target-date fund vintage should be checked against the money's actual
   horizon rather than the retirement year it's named for, how spousal age
   gaps change Social Security claiming strategy (if none of that made sense, don't worry, the drafted plan should explain it).
@@ -70,7 +70,7 @@ your-finances/
 └── Session_Context/            # optional, session-only scratch docs
 ```
 
-None of this is required up front — I recommend starting with a `Client_Profile.md` and a /Investments folder that contains your recent downloaded financial statements. You can absolutely also start with  nothing at all, and let it grow over time. If you point the skill at a
+None of this is required up front — I recommend starting with a `Client_Profile.md` and a /Investments folder that contains your recent downloaded financial statements. Once you have this then just prompt the skill with `Please run a full wealth diagnostic for me.`. This should generate a 10 section document with recommendatiosn for changes and a score given to each section after about 20 minutes of work. You can absolutely also start with  nothing at all, and let it grow over time. If you point the skill at a
 directory missing pieces of this structure, it will offer to set them up
 rather than assume your data doesn't exist. The inventory files (`investments_inventory.md` and `ss_inventory.md`) let it
 cross-check that every account or institution you expect to see is actually

@@ -5,10 +5,6 @@ private wealth advisor for household financial planning — high level investmen
 portfolio analysis, retirement planning, tax-advantaged account strategy,
 insurance review, and estate planning.
 
-## A note about the author:
-- I have worked in software for almost 30 years. I have also been a bit of a financial planning hobbiest for the same amount of time. I realized a few years ago that I had this assumption in my head that "everyone that is good at math must be good at finance"...  It turns out that is not the case, and that not everyone finds learning about finance really interesting... It also turns out that a lot of people's eyes glaze over when you talk about ROTH contributions and retirement planning... so I wanted to provide some of my experience in this world to my peers, colleagues and friends so they can educate themselves, open up new avanues for improving their family and personal financial position, and really prepare themselves for having educated conversations with financial and legal professionals.
-- Kindly note, I am not a financial advisor, I am not an attorney, I am not a CPA, seriously, this skill is a tool drafted by a financial planning hobbiest to help you think through how best to approach your financial plan for life. If you don't like the output, delete it and hire a professional...
-
 A few things this skill does. It encodes:
 
 - An **income-tier framework** (five tiers, foundational through legacy/estate
@@ -84,6 +80,10 @@ CFP, or estate attorney. It's explicitly designed to flag when professional
 review is needed before executing rollovers, Roth conversions, insurance
 purchases, or estate planning moves — see the skill's "When to Recommend
 Professional Review" section.
+
+## A note about the author:
+- I have worked in software for almost 30 years. I have also been a bit of a financial planning hobbiest for the same amount of time and happen to have a graduate degree in finance. I realized a few years ago that I had this assumption in my head that "everyone that is good at math must be good at finance"...  It turns out that is not the case, and that not everyone finds learning about finance really interesting... It also turns out that a lot of people's eyes glaze over when you talk about ROTH contributions and retirement planning... so I wanted to provide some of my experience in this world to my peers, colleagues and friends so they can educate themselves, open up new avanues for improving their family and personal financial position, and really prepare themselves for having educated conversations with financial and legal professionals.
+- Kindly note, I am not a financial advisor, I am not an attorney, I am not a CPA, seriously, this skill is a tool drafted by a financial planning hobbiest to help you think through how best to approach your financial plan for life. If you don't like the output, delete it and hire a professional...
 
 ## License
 

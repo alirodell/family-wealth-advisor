@@ -35,14 +35,7 @@ not depend on a particular model name, vendor-specific prompt syntax, or a
 single tool implementation. When a capable host provides file access,
 calculation tools, and web research, the skill uses those capabilities; when a
 tool is unavailable, it falls back to transparent formulas, stated assumptions,
-and guidance the user can carry out manually.
-
-That makes the same skill usable across ChatGPT, Codex, Claude Code, Claude
-Cowork, and other agents that support skill-style instructions with referenced
-files. The packaging files in this repository make installation convenient for
-OpenAI and Anthropic products, while
-[`skills/family-wealth-advisor/SKILL.md`](skills/family-wealth-advisor/SKILL.md)
-remains the model-independent source of truth.
+and guidance the user can carry out manually. I have tested the skill across Anthropic and Open AI models.
 
 ## Install
 

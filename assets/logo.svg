@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Family Wealth Advisor logo</title>
+  <rect width="512" height="512" rx="104" fill="#1F6F5B"/>
+  <circle cx="256" cy="256" r="176" fill="#174F43"/>
+  <path d="M105 246 256 120l151 126" fill="none" stroke="#F4E6B5" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M151 226v167h210V226" fill="none" stroke="#F4E6B5" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m188 335 45-44 37 33 61-75" fill="none" stroke="#FFFFFF" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m306 249h25v25" fill="none" stroke="#FFFFFF" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

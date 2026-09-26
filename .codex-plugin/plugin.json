@@ -1,0 +1,40 @@
+{
+  "name": "family-wealth-advisor",
+  "version": "1.2.0",
+  "description": "Rigorous family financial-planning analysis covering investments, retirement, tax strategy, insurance, career income decisions, and estate planning.",
+  "author": {
+    "name": "Ali Rodell",
+    "url": "https://github.com/alirodell"
+  },
+  "homepage": "https://github.com/alirodell/family-wealth-advisor",
+  "repository": "https://github.com/alirodell/family-wealth-advisor",
+  "license": "MIT",
+  "keywords": [
+    "financial-planning",
+    "retirement",
+    "investments",
+    "tax-planning",
+    "estate-planning"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Family Wealth Advisor",
+    "shortDescription": "Family financial planning",
+    "longDescription": "Analyze a household's financial position across cash flow, debt, investments, retirement readiness, taxes, insurance, and estate planning. Advice scales to the household's income, assets, goals, and planning complexity.",
+    "developerName": "Ali Rodell",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/alirodell/family-wealth-advisor",
+    "defaultPrompt": [
+      "Run a full wealth diagnostic for my household.",
+      "Review my retirement readiness and savings strategy.",
+      "Analyze my portfolio, taxes, insurance, and estate plan."
+    ],
+    "brandColor": "#1F6F5B",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg"
+  }
+}

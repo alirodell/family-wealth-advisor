@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "family-wealth-advisor",
+  "version": "1.2.0",
+  "description": "Rigorous family financial-planning analysis covering investments, retirement, tax strategy, insurance, career income decisions, and estate planning.",
+  "author": {
+    "name": "Ali Rodell",
+    "url": "https://github.com/alirodell"
+  },
+  "homepage": "https://github.com/alirodell/family-wealth-advisor",
+  "repository": "https://github.com/alirodell/family-wealth-advisor",
+  "license": "MIT",
+  "keywords": [
+    "financial-planning",
+    "retirement",
+    "investments",
+    "tax-planning",
+    "estate-planning"
+  ]
+}

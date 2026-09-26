@@ -1,9 +1,10 @@
 # Family Wealth Advisor
 
-A Claude Code / Claude Cowork skill that turns Claude into a rigorous, direct
-private wealth advisor for household financial planning — high level investment
-portfolio analysis, retirement planning, tax-advantaged account strategy,
-insurance review, and estate planning.
+A model-agnostic skill for rigorous, direct household financial-planning
+analysis — including investment portfolios, retirement planning,
+tax-advantaged account strategy, insurance review, and estate planning. It is
+packaged for ChatGPT, Codex, Claude Code, and Claude Cowork, but its core
+instructions are not tied to a particular model vendor.
 
 A few things this skill does. It encodes:
 
@@ -19,7 +20,7 @@ A few things this skill does. It encodes:
 - Specific, call outs for things people often don't know about or ignore. - the backdoor Roth pro-rata  trap, why target-date fund vintage should be checked against the money's actual
   horizon rather than the retirement year it's named for, how spousal age
   gaps change Social Security claiming strategy (if none of that made sense, don't worry, the drafted plan should explain it).
-- If you provide them, the plan can include a diagnostic on your estate documents, your will, any trusts, etc. I don't actually recommend doing this at first unless you want to go all in. Claude models are actually really quite good at proofreading these documents based on specific life contexts, age, income, family size, etc. When you combine the output of the financial aspects that this skill helps aggregate, the output is really quite interesting and helpful, but...  It can get really complex.
+- If you provide them, the plan can include a diagnostic on your estate documents, your will, any trusts, etc. I don't actually recommend doing this at first unless you want to go all in. Current language models can be quite good at reviewing these documents against specific life contexts, age, income, and family size. When you combine that output with the financial information this skill helps aggregate, the result can be useful—but it can also get complex quickly.
 
 See [`skills/family-wealth-advisor/SKILL.md`](skills/family-wealth-advisor/SKILL.md)
 for the full skill definition and
@@ -27,16 +28,66 @@ for the full skill definition and
 for cross-cutting reference material (retirement fund mechanics, IRS source
 links, etc).
 
+## Model-agnostic by design
+
+The core skill uses portable Markdown instructions and reference files. It does
+not depend on a particular model name, vendor-specific prompt syntax, or a
+single tool implementation. When a capable host provides file access,
+calculation tools, and web research, the skill uses those capabilities; when a
+tool is unavailable, it falls back to transparent formulas, stated assumptions,
+and guidance the user can carry out manually.
+
+That makes the same skill usable across ChatGPT, Codex, Claude Code, Claude
+Cowork, and other agents that support skill-style instructions with referenced
+files. The packaging files in this repository make installation convenient for
+OpenAI and Anthropic products, while
+[`skills/family-wealth-advisor/SKILL.md`](skills/family-wealth-advisor/SKILL.md)
+remains the model-independent source of truth.
+
 ## Install
 
-**Claude Code:**
+### Codex CLI
+
+Add this repository as a plugin marketplace, then install the plugin:
+
+```sh
+codex plugin marketplace add alirodell/family-wealth-advisor
+codex plugin add family-wealth-advisor@family-wealth-advisor
+```
+
+Start a new Codex session after installation. The skill is discovered
+automatically when a request involves household financial planning; no slash
+command is required.
+
+### ChatGPT desktop app (local mode)
+
+The desktop app and Codex use the same local plugin marketplace. Add the
+repository from a terminal if you have not already done so:
+
+```sh
+codex plugin marketplace add alirodell/family-wealth-advisor
+```
+
+Then fully quit and reopen the ChatGPT desktop app:
+
+1. Open **Customize** and go to the **Plugins Directory**.
+2. Select the `family-wealth-advisor` marketplace.
+3. Install **Family Wealth Advisor**.
+
+In a local chat, choose **Family Wealth Advisor** from the composer or mention
+it with `@Family Wealth Advisor`. It can also be selected automatically for
+relevant financial-planning questions.
+
+### Claude Code
 
 ```
 /plugin marketplace add alirodell/family-wealth-advisor
 /plugin install family-wealth-advisor
 ```
 
-**Claude Cowork / claude.ai:** open the Customize menu, add this repository
+### Claude Cowork / claude.ai
+
+Open the Customize menu, add this repository
 as a custom marketplace, then install the `family-wealth-advisor` plugin from
 it.
 
@@ -75,7 +126,7 @@ closed.
 
 ## What it doesn't do
 
-This skill makes Claude a more rigorous analyst, not a substitute for a CPA,
+This skill provides a more rigorous analysis workflow, not a substitute for a CPA,
 CFP, or estate attorney. It's explicitly designed to flag when professional
 review is needed before executing rollovers, Roth conversions, insurance
 purchases, or estate planning moves — see the skill's "When to Recommend

@@ -2,7 +2,7 @@
 
 Cross-cutting reference material that applies regardless of income tier. See `references/tier-1-foundational.md` through `references/tier-5-legacy-planning.md` for tier-specific playbooks.
 
-**Last verified: July 2026 (tax year 2026 figures, post-OBBBA).** All figures below are subject to annual IRS inflation adjustment and occasional legislative change — confirm current-year numbers before using them in any calculation that matters, per the skill's Tax Guidance Standard.
+**Figures last verified: July 2026 (tax year 2026 figures, post-OBBBA). Source links last checked: October 2026.** All figures below are subject to annual IRS inflation adjustment and occasional legislative change — confirm current-year numbers before using them in any calculation that matters, per the skill's Tax Guidance Standard.
 
 ## Table of Contents
 1. [Current-Year Key Thresholds](#current-year-key-thresholds)
@@ -12,6 +12,8 @@ Cross-cutting reference material that applies regardless of income tier. See `re
 5. [Estate Tax Exemptions: Federal and State Landscape](#estate-tax-exemptions-federal-and-state-landscape)
 6. [529 Plans: Contribution Mechanics, State Availability, and Tax Parity](#529-plans-contribution-mechanics-state-availability-and-tax-parity)
 7. [Trump Accounts (IRC §530A): Custodial Accounts for Minors](#trump-accounts-irc-530a-custodial-accounts-for-minors)
+8. [Retirement Income: Social Security, Medicare, and the Healthcare Bridge](#retirement-income-social-security-medicare-and-the-healthcare-bridge)
+9. [Equity Compensation and Investment Protections](#equity-compensation-and-investment-protections)
 
 ---
 
@@ -49,6 +51,12 @@ The single consolidated source for the numbers referenced across SKILL.md and th
 - [2026 Tax Brackets and Federal Income Tax Rates (Tax Foundation)](https://taxfoundation.org/data/all/federal/2026-tax-brackets/)
 - [The Estate Tax Exemption Amount for 2026 (Kiplinger)](https://www.kiplinger.com/taxes/new-estate-tax-exemption-amount)
 - [Saver's Credit: How to claim it in 2025 and 2026 (Fidelity)](https://www.fidelity.com/learning-center/smart-money/savers-credit)
+- [Retirement Savings Contributions Credit (Saver's Credit) (IRS)](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-savings-contributions-savers-credit)
+- [Retirement topics — 401(k) and profit-sharing plan contribution limits (IRS)](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits)
+- [SEP contribution limits, including grandfathered SARSEPs (IRS)](https://www.irs.gov/retirement-plans/plan-participant-employee/sep-contribution-limits-including-grandfathered-sarseps)
+- [One-Participant 401(k) Plans (IRS)](https://www.irs.gov/retirement-plans/one-participant-401k-plans)
+- [Qualified business income deduction (IRS)](https://www.irs.gov/newsroom/qualified-business-income-deduction) — the Section 199A / SSTB phase-out row above
+- [Publication 969 — Health Savings Accounts and Other Tax-Favored Health Plans (IRS)](https://www.irs.gov/publications/p969)
 
 ---
 
@@ -89,12 +97,16 @@ If your aggregate Traditional, SEP, and SIMPLE IRA balances are not exactly **$0
 ### Official IRS Documentation References
 * **IRS Form 8606 (Nondeductible IRAs):** Lays out the step-by-step reporting lines. Line 6 specifically demands the fair market value of all IRAs as of December 31.
   * [Official Landing Page](https://www.irs.gov/forms-pubs/about-form-8606)
-  * [Form 8606 PDF Form](https://www.irs.gov/pub/irs-prior/f8606--2024.pdf)
+  * [Form 8606 PDF Form (current year)](https://www.irs.gov/pub/irs-pdf/f8606.pdf)
   * [Form 8606 Instructions PDF](https://www.irs.gov/pub/irs-pdf/i8606.pdf)
 * **IRS Publication 590-B (Distributions from IRAs):** Explains the underlying statutory logic under the "Prorating Only Nondeductible Contributions" section.
   * [Official Landing Page](https://www.irs.gov/forms-pubs/about-publication-590-b)
   * [Publication 590-B Full Web Guide](https://www.irs.gov/publications/p590b)
   * [Publication 590-B PDF Version](https://www.irs.gov/pub/irs-pdf/p590b.pdf)
+* **IRS rollover rules:** Governs the "reverse rollover" mitigation above, including the one-rollover-per-year limit and the direct vs. indirect rollover distinction.
+  * [Rollovers of retirement plan and IRA distributions](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions)
+* **IRS Publication 590-A (Contributions to IRAs):** Contribution limits, deductibility, and Roth eligibility rules.
+  * [Publication 590-A](https://www.irs.gov/publications/p590a)
 
 ---
 
@@ -124,6 +136,8 @@ Unlike the IRA-based backdoor Roth (which any taxpayer can execute regardless of
 ### Sources
 - [401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500 (IRS)](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500)
 - [The 415(c) Annual Additions Limit, Explained](https://retirementcheck101.com/library/415c-annual-additions-limit.html)
+- [IRS Notice 2014-54 — Allocation of pre-tax and after-tax amounts in plan distributions](https://www.irs.gov/pub/irs-drop/n-14-54.pdf) — the primary-source basis for splitting after-tax contributions from earnings on rollover or conversion
+- [One-Participant 401(k) Plans (IRS)](https://www.irs.gov/retirement-plans/one-participant-401k-plans)
 
 ---
 
@@ -149,9 +163,9 @@ A PUA rider allows additional premium dollars, beyond the base policy premium, t
 - The **commission structure** — whole life commissions are commonly front-loaded in the 50-100%+ of first-year-premium range, which is worth knowing when evaluating why a particular policy or funding schedule was recommended
 
 ### Sources
-- [26 U.S.C. §7702A — Modified endowment contract defined](https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title26-section7702A&num=0&edition=prelim)
+- [26 U.S.C. §7702A — Modified endowment contract defined (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/7702A)
 - [The 7-Pay Test Under IRC Section 7702A: MEC Rules (LegalClarity)](https://legalclarity.org/the-7-pay-test-under-irc-section-7702a-mec-rules/)
-- [What Is a Modified Endowment Contract Under IRC 7702A? (LegalClarity)](https://legalclarity.org/what-is-a-modified-endowment-contract-under-irc-7702a/)
+- [IRC Section 7702: Federal Tax Definition of Life Insurance (LegalClarity)](https://legalclarity.org/irc-section-7702-federal-tax-definition-of-life-insurance/)
 
 ---
 
@@ -194,6 +208,9 @@ A household's Tier 5 status should be checked against **both** the federal exemp
 - [Where Not To Die In The U.S. In 2026 (Forbes)](https://www.forbes.com/sites/kellyphillipserb/2026/05/16/state-estate-inheritance-taxes-probate-costs-2026/)
 - [16 States With Estate Taxes or Inheritance Taxes (AARP)](https://www.aarp.org/money/retirement/states-with-estate-inheritance-taxes/)
 - [States With No Inheritance Taxes or Estate Tax in 2026 (Kiplinger)](https://www.kiplinger.com/taxes/states-with-no-inheritance-estate-tax)
+- [Estate tax (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax) — federal exemption, portability, and Form 706 filing
+- [Frequently asked questions on gift taxes (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes) — annual exclusion, lifetime exemption, and gift-splitting between spouses
+- [About Form 709 — United States Gift (and Generation-Skipping Transfer) Tax Return (IRS)](https://www.irs.gov/forms-pubs/about-form-709)
 
 ---
 
@@ -265,6 +282,9 @@ When a client asks about a 529 plan, the actual sequence of questions is: (1) do
 - [529 Contribution Limits 2026: Maximums by State (Saving For College)](https://www.savingforcollege.com/article/maximum-529-plan-contribution-limits-by-state) — state aggregate balance caps
 - [States that do not conform with federal 529 plan tax laws (Saving For College)](https://www.savingforcollege.com/article/states-that-do-not-conform-with-federal-529-plan-tax-laws) — K-12 conformity
 - [No Income Tax States 2026 (World Population Review)](https://worldpopulationreview.com/state-rankings/no-income-tax-states)
+- [Publication 970 — Tax Benefits for Education (IRS)](https://www.irs.gov/publications/p970) — qualified 529 expenses, K-12 treatment, and the 529-to-Roth IRA rollover
+- [About Form 709 (IRS)](https://www.irs.gov/forms-pubs/about-form-709) — the gift tax return; see its instructions for the five-year averaging ("superfunding") election
+- [Frequently asked questions on gift taxes (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes)
 
 ---
 
@@ -303,7 +323,7 @@ Unlike a self-directed IRA, funds must be held in a **specific, mandated investm
 - **Because this is pilot-stage legislation, revisit this section against current IRS guidance before advising on it** — final regulations, contribution mechanics, or the seed-money cohort could still change.
 
 ### Sources
-- [26 U.S.C. §530A — Trump accounts (U.S. Code, House Office of the Law Revision Counsel)](https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title26-section530A&num=0&edition=prelim)
+- [26 U.S.C. §530A — Trump accounts (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/530A)
 - [IRS Notice 2025-68 — Notice of intent to issue regulations with respect to section 530A](https://www.irs.gov/pub/irs-drop/n-25-68.pdf)
 - [Treasury, IRS issue proposed regulations for Trump Accounts contribution pilot program (IRS Newsroom)](https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-for-trump-accounts-contribution-pilot-program-treasury-department-to-deposit-1000-into-the-account-of-each-eligible-child)
 - [Treasury, IRS issue proposed regulations on how to open initial Trump Accounts (IRS Newsroom)](https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-how-to-open-initial-trump-accounts-under-the-one-big-beautiful-bill)
@@ -312,3 +332,49 @@ Unlike a self-directed IRA, funds must be held in a **specific, mandated investm
 - [Instructions for Form 4547 (IRS)](https://www.irs.gov/pub/irs-pdf/i4547.pdf)
 - [Trump Accounts: Overview and Policy Considerations (Congressional Research Service, via Congress.gov)](https://www.congress.gov/crs-product/R48910)
 - [4 million children have been signed up for Trump Accounts (IRS Newsroom)](https://www.irs.gov/newsroom/4-million-children-have-been-signed-up-for-trump-accounts-with-1-million-claiming-the-1000-pilot-program-contribution)
+
+---
+
+## Retirement Income: Social Security, Medicare, and the Healthcare Bridge
+
+SKILL.md's retirement-planning guidance (claiming-age optimization, the spousal age-gap checks, the survivor "blackout period," and pricing the pre-Medicare healthcare bridge) depends on figures and rules that change annually or are easy to misremember. Confirm each against the sources below, and prefer the client's own SSA statement to any general estimate.
+
+### What to verify, and where
+- **Maximum benefit and the current-year COLA** — use the SSA's annual COLA fact sheet rather than a remembered number.
+- **Claiming-age reductions and delayed-retirement credits** — SSA's Benefits Planner pages give the reduction schedule by birth year and full retirement age.
+- **Survivor benefits, including the child-in-care and age-60 eligibility rules** behind the blackout-period analysis — use SSA's survivor benefits pages, and read the child-benefit and widow(er) sections separately.
+- **The retirement earnings test** — relevant to anyone claiming before full retirement age while still working.
+- **Medicare premiums and income-related surcharges (IRMAA)** — IRMAA is assessed on income from two years prior, which matters for planning large Roth conversions or a liquidity event near age 63–65.
+- **Trust fund solvency** — the Trustees Report is the source for any "what if benefits are reduced" stress test; state the assumption used rather than treating it as a forecast.
+- **Taxation of benefits** — a portion of benefits can be taxable depending on combined income; see IRS Publication 915.
+
+### Sources
+- [2026 Cost-of-Living Adjustment (COLA) Fact Sheet (SSA)](https://www.ssa.gov/news/en/cola/factsheets/2026.html)
+- [Retirement Age and Benefit Reduction (SSA Benefits Planner)](https://www.ssa.gov/benefits/retirement/planner/agereduction.html)
+- [Receiving Benefits While Working (SSA Benefits Planner)](https://www.ssa.gov/benefits/retirement/planner/whileworking.html)
+- [Survivor benefits (SSA)](https://www.ssa.gov/survivor)
+- [Medicare Premiums (SSA Benefits Planner)](https://www.ssa.gov/benefits/medicare/medicare-premiums.html)
+- [Medicare costs (Medicare.gov)](https://www.medicare.gov/basics/costs/medicare-costs)
+- [Reports from the Board of Trustees (SSA)](https://www.ssa.gov/oact/TR/)
+- [Publication 915 — Social Security and Equivalent Railroad Retirement Benefits (IRS)](https://www.irs.gov/publications/p915)
+- [Retirement plan and IRA required minimum distributions FAQs (IRS)](https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs)
+
+---
+
+## Equity Compensation and Investment Protections
+
+SKILL.md instructs the reader to look for off-balance-sheet equity compensation before concluding a net worth snapshot, to treat unvested equity as a footnote rather than an asset, and to check a target-date fund's glide path against the money's real horizon. The sources below back those points.
+
+### What to verify, and where
+- **Tax treatment of stock options and equity awards** — option type (incentive vs. non-qualified) and the timing of income recognition drive the tax bill. Check whether withholding at vesting or exercise is likely to cover the household's actual marginal rate.
+- **Capital gains treatment and holding periods** — governs what happens to shares after vesting or exercise.
+- **SIPC coverage limits** — SIPC protects customers if a brokerage fails, not against market loss. Confirm what it does and does not cover before telling a client a position is protected; unvested awards are forfeitable, which is why this skill treats them as a footnote rather than an asset.
+- **Target-date fund glide paths** — the SEC bulletin explains the "to" vs. "through" design distinction behind the vintage-versus-horizon check.
+
+### Sources
+- [Topic no. 427, Stock options (IRS)](https://www.irs.gov/taxtopics/tc427)
+- [Publication 525 — Taxable and Nontaxable Income (IRS)](https://www.irs.gov/publications/p525)
+- [Topic no. 409, Capital gains and losses (IRS)](https://www.irs.gov/taxtopics/tc409)
+- [What SIPC Protects (SIPC)](https://www.sipc.org/for-investors/what-sipc-protects)
+- [Target Date Funds — Investor Bulletin (Investor.gov)](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/target-date-funds-investor-bulletin)
+- [S corporation compensation and medical insurance issues (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-compensation-and-medical-insurance-issues) — the "reasonable compensation" standard for the Tier 4 S-corp election

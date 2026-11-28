@@ -33,7 +33,7 @@ See [`skills/family-wealth-advisor/SKILL.md`](skills/family-wealth-advisor/SKILL
 for the full skill definition and
 [`skills/family-wealth-advisor/REFERENCE.md`](skills/family-wealth-advisor/REFERENCE.md)
 for cross-cutting reference material (retirement fund mechanics, IRS source
-links, etc).
+links, etc). See [`CHANGELOG.md`](CHANGELOG.md) for what changed in each version.
 
 ## Model-agnostic by design
 
@@ -152,7 +152,8 @@ scenario, create a new folder in the same layout.
 ### Automated checks
 
 GitHub Actions runs free structural checks on every pull request (no model calls):
-the plugin manifests agree and the version is bumped when the skill changes, every
+the plugin manifests agree, the version is bumped when the skill changes and has a
+`CHANGELOG.md` entry, every
 eval case folder loads correctly, and SKILL.md's structure and internal links are
 intact. A weekly job checks the external links in the reference material, and a
 reminder opens an issue when the tax figures are a year old and each November when

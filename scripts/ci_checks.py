@@ -115,6 +115,12 @@ def check_manifests(base=None):
     current = next(iter(versions.values()), None)
     r.note(f"version {current}")
 
+    changelog = ROOT / "CHANGELOG.md"
+    if not changelog.is_file():
+        r.error("CHANGELOG.md is missing")
+    elif current and not re.search(rf"^## \[?{re.escape(current)}\]?(\s|$)", changelog.read_text(), re.M):
+        r.error(f"CHANGELOG.md has no '## {current}' entry; add one describing this version")
+
     if base and current:
         changed = git("diff", "--name-only", f"{base}...HEAD").split()
         shipped = [f for f in changed if f.startswith("skills/") and "/evals/" not in f]

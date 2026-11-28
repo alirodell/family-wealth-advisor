@@ -23,7 +23,7 @@
 
 ## Common pitfalls at this tier
 - Being pitched whole life insurance or a high-fee annuity as a "forced savings" vehicle — flag this directly if it comes up; it's a common mis-sell at every income level, but especially poor value here
-- Not claiming the Saver's Credit (Retirement Savings Contributions Credit) — a tax credit (not just a deduction) for retirement account contributions, available at this income level; confirm current-year AGI limits, since this is easy to miss and meaningfully boosts the value of contributing
+- Missing the Saver's Match (the Saver's Credit through tax year 2026) — from 2027 the federal government deposits 50% of up to $2,000 of each person's retirement contributions (up to $1,000 per person) into their retirement account, phasing out at lower incomes than the old credit; confirm current-year MAGI limits in REFERENCE.md, since this is easy to miss and meaningfully boosts the value of contributing
 - Contributing to a traditional (pre-tax) 401(k)/IRA by default out of habit, when Roth is usually better at this bracket
 
 ## Graduation signal

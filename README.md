@@ -17,9 +17,16 @@ A few things this skill does. It encodes:
   reviews (net worth, cash flow, emergency fund, debt, insurance, investment
   allocation, retirement readiness, tax efficiency, estate planning status,
   overall health score). 
-- Specific, call outs for things people often don't know about or ignore. - the backdoor Roth pro-rata  trap, why target-date fund vintage should be checked against the money's actual
-  horizon rather than the retirement year it's named for, how spousal age
-  gaps change Social Security claiming strategy (if none of that made sense, don't worry, the drafted plan should explain it).
+- Specific call-outs for things people often don't know about or ignore: the backdoor Roth pro-rata trap, why target-date fund vintage should be checked against the money's actual
+  horizon rather than the retirement year it's named for (the same check applies to a 529's target-enrollment year), how spousal age
+  gaps change Social Security claiming strategy, and why there's nothing to gain from delaying Social Security past 70 (if none of that made sense, don't worry, the drafted plan should explain it).
+- **Retirement decumulation guidance** for the years between leaving work and
+  claiming Social Security: how to lay out each year's spending, how to compute
+  withdrawal taxes with the actual brackets rather than a flat rate (low-income
+  years are often taxed far less than people assume), when Roth conversions pay
+  and when they don't, and how to size a cash buffer so a bad market early in
+  retirement doesn't force you to sell at the bottom. It works from a few numbers
+  you can give in conversation; documents make it more precise but aren't required.
 - If you provide them, the plan can include a diagnostic on your estate documents, your will, any trusts, etc. I don't actually recommend doing this at first unless you want to go all in. Current language models can be quite good at reviewing these documents against specific life contexts, age, income, and family size. When you combine that output with the financial information this skill helps aggregate, the result can be useful—but it can also get complex quickly.
 
 See [`skills/family-wealth-advisor/SKILL.md`](skills/family-wealth-advisor/SKILL.md)
@@ -35,7 +42,7 @@ not depend on a particular model name, vendor-specific prompt syntax, or a
 single tool implementation. When a capable host provides file access,
 calculation tools, and web research, the skill uses those capabilities; when a
 tool is unavailable, it falls back to transparent formulas, stated assumptions,
-and guidance the user can carry out manually. I have tested the skill across Anthropic and Open AI models.
+and guidance the user can carry out manually. I have tested the skill across Anthropic and OpenAI models.
 
 ## Install
 
@@ -110,12 +117,37 @@ your-finances/
 └── Session_Context/            # optional, session-only scratch docs
 ```
 
-None of this is required up front — I recommend starting with a `Client_Profile.md` and a /Investments folder that contains your recent downloaded financial statements. Once you have this then just prompt the skill with `Please run a full wealth diagnostic for me.`. This should generate a 10 section document with recommendatiosn for changes and a score given to each section after about 20 minutes of work. You can absolutely also start with  nothing at all, and let it grow over time. If you point the skill at a
+None of this is required up front — I recommend starting with a `Client_Profile.md` and a /Investments folder that contains your recent downloaded financial statements. Once you have this then just prompt the skill with `Please run a full wealth diagnostic for me.`. This should generate a 10 section document with recommendations for changes and a score given to each section after about 20 minutes of work. You can absolutely also start with nothing at all, and let it grow over time. If you point the skill at a
 directory missing pieces of this structure, it will offer to set them up
 rather than assume your data doesn't exist. The inventory files (`investments_inventory.md` and `ss_inventory.md`) let it
 cross-check that every account or institution you expect to see is actually
 represented, and flag anything missing instead of assuming an account was
-closed.
+closed. If you also save transaction exports (CSV downloads from your 401(k),
+brokerage and bank accounts) in `/Investments`, the skill can check how much you
+actually saved against what a plan assumes, separating new money from transfers
+between your own accounts and from rollovers.
+
+## Testing
+
+The skill's test cases live in
+[`skills/family-wealth-advisor/evals/`](skills/family-wealth-advisor/evals/),
+one folder per scenario. Each folder holds the prompt a user might type
+(`prompt.md`), a plain-language description of a good answer (`case.yaml`), and
+one file per check the answer should pass (`graders/`). A case that needs input
+files, such as sample transaction exports, keeps them in its own `files/`
+folder.
+
+With Claude Code installed, run the whole suite from the skill directory:
+
+```sh
+cd skills/family-wealth-advisor
+claude plugin eval . --allow-tools Write,Edit,Bash --scaffold
+```
+
+`--scaffold` copies each case's input files into place before it runs. The
+command runs every case with and without the skill and reports the score for
+each. These are real model runs and are billed to your account. To add a
+scenario, create a new folder in the same layout.
 
 ## What it doesn't do
 
@@ -126,8 +158,8 @@ purchases, or estate planning moves — see the skill's "When to Recommend
 Professional Review" section.
 
 ## A note about the author:
-- I have worked in software for almost 30 years. I have also been a bit of a financial planning hobbiest for the same amount of time and happen to have a graduate degree in finance. I realized a few years ago that I had this assumption in my head that "everyone that is good at math must be good at finance"...  It turns out that is not the case, and that not everyone finds learning about finance really interesting... It also turns out that a lot of people's eyes glaze over when you talk about ROTH contributions and retirement planning... so I wanted to provide some of my experience in this world to my peers, colleagues and friends so they can educate themselves, open up new avenues for improving their family and personal financial position, and really prepare themselves for having educated conversations with financial and legal professionals.
-- Kindly note, I am not a financial advisor, I am not an attorney, I am not a CPA, seriously, this skill is a tool drafted by a financial planning hobbiest to help you think through how best to approach your financial plan for life. If you don't like the output, delete it and hire a professional...
+- I have worked in software for almost 30 years. I have also been a bit of a financial planning hobbyist for the same amount of time and happen to have a graduate degree in finance. I realized a few years ago that I had this assumption in my head that "everyone that is good at math must be good at finance"...  It turns out that is not the case, and that not everyone finds learning about finance really interesting... It also turns out that a lot of people's eyes glaze over when you talk about Roth contributions and retirement planning... so I wanted to provide some of my experience in this world to my peers, colleagues and friends so they can educate themselves, open up new avenues for improving their family and personal financial position, and really prepare themselves for having educated conversations with financial and legal professionals.
+- Kindly note, I am not a financial advisor, I am not an attorney, I am not a CPA, seriously, this skill is a tool drafted by a financial planning hobbyist to help you think through how best to approach your financial plan for life. If you don't like the output, delete it and hire a professional...
 
 ## License
 

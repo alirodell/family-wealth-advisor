@@ -1,0 +1,47 @@
+# Scheduled upkeep: checks the external links in the skill's reference material and reminds you
+# when the tax figures are due for re-verification. Both open (or update) a GitHub issue instead
+# of failing silently.
+#
+# GitHub pauses scheduled workflows in public repos after 60 days without commits. The freshness
+# reminder also runs on every push to main so it still fires whenever the repo is active, and
+# either job can be started by hand from the Actions tab (workflow_dispatch).
+name: Maintenance
+
+on:
+  schedule:
+    - cron: "23 14 * * 1"      # Mondays, 14:23 UTC
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    name: External links
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check external links (opens or updates an issue if any are broken)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/ci_checks.py links --open-issue
+
+  freshness:
+    name: Tax figure freshness
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Remind when REFERENCE.md figures are due (12 months old, or each November)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/ci_checks.py freshness --open-issue

@@ -1,0 +1,42 @@
+# Structural checks on every pull request and on pushes to main. No network or model calls;
+# runs in well under a minute. Locally: python scripts/ci_checks.py all --base origin/main
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: Structural checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # the version-bump rule compares against the base branch
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Plugin manifests agree, and the version is bumped when the skill changes
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            python scripts/ci_checks.py manifests --base "origin/${{ github.base_ref }}"
+          else
+            python scripts/ci_checks.py manifests
+          fi
+
+      - name: Eval case folders load correctly
+        if: success() || failure()
+        run: python scripts/ci_checks.py evals
+
+      - name: SKILL.md structure and internal links
+        if: success() || failure()
+        run: python scripts/ci_checks.py skill

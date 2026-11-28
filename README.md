@@ -149,6 +149,21 @@ command runs every case with and without the skill and reports the score for
 each. These are real model runs and are billed to your account. To add a
 scenario, create a new folder in the same layout.
 
+### Automated checks
+
+GitHub Actions runs free structural checks on every pull request (no model calls):
+the plugin manifests agree and the version is bumped when the skill changes, every
+eval case folder loads correctly, and SKILL.md's structure and internal links are
+intact. A weekly job checks the external links in the reference material, and a
+reminder opens an issue when the tax figures are a year old and each November when
+the next year's thresholds are published. To run the same checks locally:
+
+```sh
+pip install pyyaml
+python scripts/ci_checks.py all --base origin/main
+python scripts/ci_checks.py links
+```
+
 ## What it doesn't do
 
 This skill provides a more rigorous analysis workflow, not a substitute for a CPA,

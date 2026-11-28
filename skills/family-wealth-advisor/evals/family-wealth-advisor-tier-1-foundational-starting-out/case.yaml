@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: family-wealth-advisor-tier-1-foundational-starting-out
+expected_outcome: |
+  Prioritizes paying down the 24% APR credit card debt before or alongside starting to invest, then
+  capturing the full employer 401(k) match, then building toward a full emergency fund, then a direct
+  Roth IRA. Does not introduce backdoor Roth mechanics, whole life insurance, or advanced estate
+  structures, since none are relevant at this income.

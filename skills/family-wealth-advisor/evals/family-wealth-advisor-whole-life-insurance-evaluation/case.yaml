@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: family-wealth-advisor-whole-life-insurance-evaluation
+expected_outcome: |
+  Applies the age (35-50) / income ($300k+) / bracket (32%+) sweet-spot framework from the skill and
+  evaluates whether this household plausibly fits it, rather than a blanket yes/no. Flags that the
+  salesperson has a commission incentive and that whole life is not a substitute for term life or
+  maxed tax-advantaged accounts. Mentions key mechanics (7-pay test, MEC status, PUA rider) at a level
+  appropriate to the question. Recommends independent CPA/CFP review before purchase.

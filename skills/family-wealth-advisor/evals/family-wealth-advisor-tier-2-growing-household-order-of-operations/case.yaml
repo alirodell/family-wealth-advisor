@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: family-wealth-advisor-tier-2-growing-household-order-of-operations
+expected_outcome: |
+  Recommends capturing the employer match, building the emergency fund toward 3-6 months, direct Roth
+  IRA contributions for both spouses (not backdoor, since well under the phase-out), then 529
+  contributions with a check for any state tax deduction. Does not introduce backdoor Roth,
+  mega-backdoor Roth, whole life insurance, or advanced estate structures.

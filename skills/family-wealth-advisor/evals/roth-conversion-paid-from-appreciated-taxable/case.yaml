@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: roth-conversion-paid-from-appreciated-taxable
+expected_outcome: |
+  Assesses the conversion plan by comparing the effective cost of converting now with the expected
+  marginal rate on future required distributions. Points out that paying the conversion tax by selling
+  appreciated brokerage holdings realizes additional gains (about 62.5% of each sale is gain here),
+  uses up the 0% gains band and can trigger NIIT, raising the effective cost above the nominal 24%
+  bracket, and that New York taxes the conversion too. States the RMD starting age for someone born in
+  1962 (75), mentions IRMAA's two-year lookback, presents the answer as a range or sensitivity rather
+  than one number, and recommends CPA review.

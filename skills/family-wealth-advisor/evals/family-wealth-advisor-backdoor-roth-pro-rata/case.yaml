@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: family-wealth-advisor-backdoor-roth-pro-rata
+expected_outcome: |
+  Explicitly names and explains the pro-rata rule, explains why the existing $85k pre-tax IRA balance
+  breaks a 'clean' backdoor Roth conversion, and proposes the SEP-IRA/401(k) rollover-style fix
+  (rolling the traditional IRA balance into an employer 401(k) if available) before executing the
+  conversion. Recommends CPA/CFP review before executing the rollover or conversion.

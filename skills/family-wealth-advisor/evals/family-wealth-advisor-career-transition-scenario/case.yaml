@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: family-wealth-advisor-career-transition-scenario
+expected_outcome: |
+  Quantifies impact on both retirement savings trajectory and 529 funding together (not siloed),
+  states explicit assumptions (return rate, inflation rate, contribution levels) and distinguishes
+  current-dollar vs future-dollar figures. Gives a direct, prioritized recommendation on whether/how
+  much to scale back 529 contributions during the lean years, and notes the new SEP-IRA/Solo 401(k)
+  options that open up with self-employment income.

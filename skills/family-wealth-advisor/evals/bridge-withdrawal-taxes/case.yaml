@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: bridge-withdrawal-taxes
+expected_outcome: |
+  Explains that a flat 25% rate is too high for low-income bridge years funded mainly from the taxable
+  account, because the standard deduction and the 0% long-term capital gains band absorb much of the
+  realized gain. Computes or illustrates the tax by stacking ordinary income and gains across the
+  brackets, treats the gain share of brokerage sales as an explicit assumption (asking or running a
+  range), notes that Texas has no state income tax, and estimates a materially lower effective rate.

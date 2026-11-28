@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: claim-social-security-at-70-and-a-half
+expected_outcome: |
+  Corrects the misconception: delayed retirement credits stop at age 70, so waiting past 70 adds
+  nothing and forgoes months of benefits. Explains that 70½ is the old required-minimum-distribution
+  age, notes the current RMD age for someone born in 1960 is 75, and identifies the claiming date at
+  70 (2030) as the latest useful date.

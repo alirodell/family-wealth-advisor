@@ -2,7 +2,7 @@
 
 Cross-cutting reference material that applies regardless of income tier. See `references/tier-1-foundational.md` through `references/tier-5-legacy-planning.md` for tier-specific playbooks.
 
-**Figures last verified: July 2026 (tax year 2026 figures, post-OBBBA). Source links last checked: October 2026.** All figures below are subject to annual IRS inflation adjustment and occasional legislative change — confirm current-year numbers before using them in any calculation that matters, per the skill's Tax Guidance Standard.
+**Figures last verified: July 2026 (tax year 2026 figures, post-OBBBA); long-term capital gains bands and RMD starting ages added and verified November 2026. Source links last checked: October 2026.** All figures below are subject to annual IRS inflation adjustment and occasional legislative change — confirm current-year numbers before using them in any calculation that matters, per the skill's Tax Guidance Standard.
 
 ## Table of Contents
 1. [Current-Year Key Thresholds](#current-year-key-thresholds)
@@ -14,6 +14,7 @@ Cross-cutting reference material that applies regardless of income tier. See `re
 7. [Trump Accounts (IRC §530A): Custodial Accounts for Minors](#trump-accounts-irc-530a-custodial-accounts-for-minors)
 8. [Retirement Income: Social Security, Medicare, and the Healthcare Bridge](#retirement-income-social-security-medicare-and-the-healthcare-bridge)
 9. [Equity Compensation and Investment Protections](#equity-compensation-and-investment-protections)
+10. [Retirement Decumulation: Bridge Funding, Withdrawal Taxes, Roth Conversions and Cash Buffers](#retirement-decumulation-bridge-funding-withdrawal-taxes-roth-conversions-and-cash-buffers)
 
 ---
 
@@ -34,6 +35,8 @@ The single consolidated source for the numbers referenced across SKILL.md and th
 | QBI/Section 199A SSTB phase-out (MFJ) | Begins ~$403,500, phase-out window ~$150,000 wide (fully phased out by ~$553,500) | Household | Relevant to self-employed SSTB business owners (consulting, law, medicine, financial services, etc.) — sources vary slightly on the exact figures post-OBBBA; confirm against the current-year IRS Revenue Procedure before relying on an exact number |
 | Saver's Credit AGI limits (single/MFS/QSS, HoH, MFJ) | $40,250 / $60,375 / $80,500 | Household | Relevant at Tier 1 — note that 2026 is the final year of the Saver's Credit in its current form; it's replaced by the "Saver's Match" starting tax year 2027, which works differently (a direct contribution to the saver's retirement account rather than a tax refund credit) — check whether this skill's Tier 1 guidance needs updating once that transition happens |
 | Standard deduction (single / MFJ) | $16,100 / $32,200 | Household (MFJ figure shown) | Determines whether itemizing is worthwhile — the gate on charitable bunching strategies |
+| Long-term capital gains bands (single / MFJ), by taxable income | 0% up to $49,450 / $98,900; 15% up to $545,500 / $613,700; 20% above | Household — the MFJ figures are the joint numbers; do not double them | Gains stack on top of ordinary income, so ordinary income (including Roth conversions) fills the 0% band first. Central to bridge-year withdrawal taxes and conversion costs; see [Retirement Decumulation](#retirement-decumulation-bridge-funding-withdrawal-taxes-roth-conversions-and-cash-buffers) |
+| Required minimum distribution (RMD) starting age | 73 if born 1951–1958; 75 if born 1960 or later; 1959 births are ambiguous in the statute (proposed regulations say 73 — confirm against the final rule) | **Per person**, by that person's birth year | Sets when the conversion window closes and forced taxable income begins. The often-quoted "70½" is the pre-2020 age and is obsolete |
 | Trump Account (IRC §530A) annual contribution limit | $5,000 per child, aggregate | **Per child** — combines individual, employer, and cafeteria-plan contributions from all sources into one shared cap | Not indexed for inflation until after 2027; see [Trump Accounts](#trump-accounts-irc-530a-custodial-accounts-for-minors) |
 | Trump Account federal seed contribution | $1,000 per eligible child, one-time | Per child — does **not** count against the $5,000 annual limit above | Only for U.S.-citizen children born 1/1/2025–12/31/2028; requires an affirmative election on Form 4547 |
 | Federal estate tax exemption | $15,000,000 per individual | **Per person** — portable to a surviving spouse with a timely filed election, giving $30,000,000 per couple | Made permanent and indexed going forward by the One Big Beautiful Bill Act (OBBBA), signed July 2025 — a large increase from the pre-OBBBA 2025 figure of $13.99M; see [Estate Tax Exemptions](#estate-tax-exemptions-federal-and-state-landscape) for why state exemptions matter far more than this federal number for most Tier 5 conversations |
@@ -57,6 +60,8 @@ The single consolidated source for the numbers referenced across SKILL.md and th
 - [One-Participant 401(k) Plans (IRS)](https://www.irs.gov/retirement-plans/one-participant-401k-plans)
 - [Qualified business income deduction (IRS)](https://www.irs.gov/newsroom/qualified-business-income-deduction) — the Section 199A / SSTB phase-out row above
 - [Publication 969 — Health Savings Accounts and Other Tax-Favored Health Plans (IRS)](https://www.irs.gov/publications/p969)
+- [Rev. Proc. 2025-32 — 2026 inflation adjustments, including the long-term capital gains thresholds (IRS)](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf)
+- [Retirement plan and IRA required minimum distributions FAQs (IRS)](https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs) — RMD starting ages under SECURE 2.0
 
 ---
 
@@ -347,6 +352,7 @@ SKILL.md's retirement-planning guidance (claiming-age optimization, the spousal 
 - **Medicare premiums and income-related surcharges (IRMAA)** — IRMAA is assessed on income from two years prior, which matters for planning large Roth conversions or a liquidity event near age 63–65.
 - **Trust fund solvency** — the Trustees Report is the source for any "what if benefits are reduced" stress test; state the assumption used rather than treating it as a forecast.
 - **Taxation of benefits** — a portion of benefits can be taxable depending on combined income; see IRS Publication 915.
+- **Funding the years before claiming** — the bridge layout, break-even method, withdrawal-tax stacking and conversion economics are in [Retirement Decumulation](#retirement-decumulation-bridge-funding-withdrawal-taxes-roth-conversions-and-cash-buffers).
 
 ### Sources
 - [2026 Cost-of-Living Adjustment (COLA) Fact Sheet (SSA)](https://www.ssa.gov/news/en/cola/factsheets/2026.html)
@@ -378,3 +384,56 @@ SKILL.md instructs the reader to look for off-balance-sheet equity compensation 
 - [What SIPC Protects (SIPC)](https://www.sipc.org/for-investors/what-sipc-protects)
 - [Target Date Funds — Investor Bulletin (Investor.gov)](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/target-date-funds-investor-bulletin)
 - [S corporation compensation and medical insurance issues (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-compensation-and-medical-insurance-issues) — the "reasonable compensation" standard for the Tier 4 S-corp election
+
+---
+
+## Retirement Decumulation: Bridge Funding, Withdrawal Taxes, Roth Conversions and Cash Buffers
+
+The mechanics behind SKILL.md's guidance on the years between retirement and claiming. Every method here works from a handful of inputs the client can supply in conversation; statements and transaction exports make the inputs more precise but are never a precondition. State every assumption (return, inflation, gain share, tax brackets) next to the figures it produces, and label nominal versus current dollars.
+
+### Laying out the bridge
+One row per year from retirement to the claiming age, with these columns:
+
+| Column | Notes |
+|---|---|
+| Living costs | Inflate at the stated rate, except a fixed-rate mortgage payment, which stays flat in nominal dollars until payoff |
+| Education | Tuition and college costs that fall inside the window, placed by the child's actual grade |
+| Healthcare | Pre-Medicare coverage for anyone under 65, plus Medicare premiums for anyone over it. Price it separately; healthcare usually inflates faster than general spending |
+| Social Security received | Zero until the claiming age in the base case; filled in for an earlier-claiming comparison |
+| Tax | Computed with the stacking method below, not a flat rate |
+| Total drawn, and as % of the portfolio | The figure that answers "can we afford the bridge" |
+
+Run at least a base case, a lower-return or lower-savings case, and a bad-start case (a market decline in the first year or two). Where the plan has a cash buffer, show its build-up years before retirement and its use during the bridge.
+
+### Break-even age for a later claim
+Accumulate both benefit streams month by month from the earlier claiming age, discounting each month's payment at a chosen real rate, and find the first month in which the later claim's cumulative value overtakes the earlier claim's. Report it at two or three real rates (0%, 2% and 4% is a useful spread): break-even moves several years later as the rate rises. Alongside it, report the portfolio value given up by waiting, measured at the later claiming age, and the survivor value of the higher benefit (the annual difference times the survivor's expected remaining years) — for a couple with a wide age gap, the survivor value often decides the question.
+
+### Withdrawal taxes by stacking
+1. Total ordinary income: wages, pre-tax account withdrawals, Roth conversions, interest, and the taxable share of Social Security (up to 85% federally — IRS Publication 915).
+2. Subtract the standard deduction (or itemized deductions) — from ordinary income first, then from gains if ordinary income is smaller than the deduction.
+3. Tax the remaining ordinary income through the brackets.
+4. Stack long-term gains and qualified dividends on top: the part that falls within the 0% band (see the thresholds table) is untaxed, then 15%, then 20%. Ordinary income fills the 0% band first, which is why conversions and pre-tax withdrawals can make gains more expensive.
+5. Add the 3.8% net investment income tax on the lesser of net investment income and the amount by which modified AGI exceeds the threshold. The threshold is fixed in statute, so more households cross it every year.
+6. Apply the state's rules. Some states tax gains as ordinary income; many exclude Social Security; Treasury interest is exempt from state income tax.
+
+The gain share of each taxable sale comes from cost-basis figures (market value minus basis, divided by market value). Without them, run a range. Lot selection — selling high-basis lots first — lowers the gain share in the early years at the cost of a higher one later.
+
+### Roth conversion economics
+- **Effective conversion cost** = (total tax for the year with the conversion − total tax without it) ÷ amount converted. Include the tax on gains realized to raise the cash for the conversion tax; leaving it out understates the cost when the tax is paid from appreciated holdings.
+- **Compare against** the projected marginal rate (federal plus state) on required distributions once they start, with brackets indexed for inflation. The first distribution is the prior year-end pre-tax balance divided by the IRS life-expectancy factor (Publication 590-B, Appendix B). When the sole beneficiary is a spouse more than 10 years younger, the Joint and Last Survivor table applies instead of the Uniform Lifetime table, which produces smaller distributions — and so a weaker case for converting.
+- **Watch the side effects**: Medicare income-related surcharges (IRMAA) use income from two years earlier; marketplace health-insurance subsidies, if any family member relies on them, can be lost; and a large conversion can push realized gains out of the 0% band.
+- **Report a range, not a point.** Results are sensitive to the gain share, the future bracket and the valuation method. In particular, valuing gains left in a taxable account as taxable at liquidation favors realizing them early, while assuming a step-up at death does the opposite. Say which method was used.
+
+### Cash buffer arithmetic
+- **Build time from new savings**: years = ln(1 + target × y ÷ S) ÷ ln(1 + y), where S is annual new taxable savings and y is the after-tax cash yield. Divert savings for that many years before the retirement date.
+- **Carrying cost**: roughly buffer × (expected investment return − after-tax cash yield) × years held. A buffer that is refilled to stay full is held for the whole bridge, so it costs more in normal markets than one spent down early.
+- **Spending rule**: draw from the buffer only while the portfolio is below its previous high, and refill after recovery. Holding cash during a crash, and not having to sell at the bottom, is where its value comes from.
+
+### Sources
+- [Delayed Retirement Credits (SSA)](https://www.ssa.gov/benefits/retirement/planner/delayret.html) — credits stop at 70
+- [Publication 915 — Social Security and Equivalent Railroad Retirement Benefits (IRS)](https://www.irs.gov/publications/p915)
+- [Publication 590-B — Distributions from IRAs (IRS)](https://www.irs.gov/publications/p590b) — life-expectancy tables in Appendix B
+- [Retirement plan and IRA required minimum distributions FAQs (IRS)](https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs)
+- [Rev. Proc. 2025-32 (IRS)](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) — 2026 capital gains thresholds
+- [Net Investment Income Tax (Topic 559, IRS)](https://www.irs.gov/taxtopics/tc559)
+- [Medicare Premiums (SSA Benefits Planner)](https://www.ssa.gov/benefits/medicare/medicare-premiums.html) — IRMAA and the two-year lookback

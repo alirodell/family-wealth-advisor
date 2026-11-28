@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: family-wealth-advisor-commodity-investment-question
+expected_outcome: |
+  Distinguishes direct commodity exposure (e.g. CPER) from mining equity (e.g. COPX, FCX, SCCO) and
+  diversified miners (e.g. BHP, RIO), explaining the different risk/return and tax character of each.
+  Addresses tax location (taxable vs. tax-deferred vs. Roth) explicitly rather than ignoring the
+  second question.

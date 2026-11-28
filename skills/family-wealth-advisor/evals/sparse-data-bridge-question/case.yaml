@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: sparse-data-bridge-question
+expected_outcome: |
+  Works with the limited information rather than demanding documents: asks a few targeted questions
+  (annual spending, how savings split between pre-tax, Roth and taxable, Social Security estimates)
+  and/or states clearly labeled assumptions, then shows the bridge math year by year or as explicit
+  annual figures. Prices pre-Medicare health coverage for both spouses (him from 62 to 65, her for
+  about ten years until 65), notes the survivor implications of the seven-year age gap for the
+  claiming decision, and gives a direct preliminary answer with its assumptions stated.

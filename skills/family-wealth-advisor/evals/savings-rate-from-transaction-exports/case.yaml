@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: savings-rate-from-transaction-exports
+expected_outcome: |
+  Computes 2025 savings from the exports while separating new money from internal moves. Flags the
+  single $180,000 401(k) deposit as most likely a rollover rather than new savings and excludes it (or
+  asks). Separates the employee deferrals ($24,500) from the employer contributions ($15,600). Treats
+  the $20,000 journal from account 4421 as an internal transfer, nets the $10,000 withdrawal to the
+  bank, and arrives at about $53,000 of net new money into the brokerage, for roughly $77,500 saved
+  from pay plus $15,600 from the employer.
+context:
+  scaffold_script: place-files.sh
